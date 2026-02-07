@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>DSA Digital - Transformamos sua visão em realidade digital</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#002775",
+                        "forest-green": "#009440",
+                        "bright-yellow": "#FEDF00",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#0f1623",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#101318] dark:text-white antialiased">
+    <!-- Top Navigation -->
+    <header class="sticky top-0 z-50 w-full bg-primary text-white border-b border-white/10 px-4 md:px-20 py-4">
+        <div class="max-w-[1280px] mx-auto flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="text-bright-yellow">
+                    <span class="material-symbols-outlined text-4xl">
+                        shield_with_heart
+                    </span>
+                </div>
+                <h1 class="text-xl font-extrabold tracking-tight">DSA <span class="text-bright-yellow">Digital</span>
+                </h1>
+            </div>
+            <nav class="hidden md:flex items-center gap-10">
+                <a class="text-sm font-semibold hover:text-bright-yellow transition-colors"
+                    href="#servicos">Serviços</a>
+                <a class="text-sm font-semibold hover:text-bright-yellow transition-colors" href="#sobre">Sobre</a>
+                <a class="text-sm font-semibold hover:text-bright-yellow transition-colors"
+                    href="#portfolio">Portfólio</a>
+                <a class="text-sm font-semibold hover:text-bright-yellow transition-colors" href="#contato">Contato</a>
+            </nav>
+            <button
+                class="bg-forest-green hover:brightness-110 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg">
+                Solicitar Orçamento
+            </button>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section
+            class="relative overflow-hidden bg-white dark:bg-background-dark pt-16 pb-24 md:pt-24 md:pb-32 px-4 md:px-20">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="flex flex-col gap-8 z-10">
+                    <div
+                        class="inline-flex items-center gap-2 bg-primary/10 dark:bg-primary/30 text-primary dark:text-blue-300 px-4 py-2 rounded-full w-fit">
+                        <span class="material-symbols-outlined text-sm">verified</span>
+                        <span class="text-xs font-bold uppercase tracking-widest">Especialistas em Tecnologia</span>
+                    </div>
+                    <h1
+                        class="text-[#101318] dark:text-white text-5xl md:text-7xl font-black leading-[1.1] tracking-tight">
+                        Transformamos sua visão em <span class="text-primary">realidade digital</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-[540px] leading-relaxed">
+                        Desenvolvimento de sites de alta performance e sistemas de gestão personalizados para escalar
+                        seu negócio com eficiência e segurança.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <!-- <button
+                            class="bg-bright-yellow text-primary px-8 py-4 rounded-lg font-bold text-lg hover:shadow-xl hover:-translate-y-1 transition-all">
+                            Começar Projeto
+                        </button>
+                        <button
+                            class="border-2 border-primary text-primary dark:text-blue-400 dark:border-blue-400 px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/5 transition-all">
+                            Ver Portfólio
+                        </button> -->
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -top-20 -right-20 w-[500px] h-[500px] bg-primary/5 rounded-full blur-3xl">
+                    </div>
+                    <div class="relative w-full aspect-square rounded-2xl overflow-hidden shadow-2xl bg-gray-100"
+                        data-alt="Abstract 3D digital technology illustration with glowing lines"
+                        style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCME4xOJ9gSqRyajfvj2YPZ1xRdSiBWFeRuSOnkrTuQzSzJ0SFllkZ8XF8MMO8ygH-6mAVYwdxgDVFafuWCDiD6Xk476rTGkUOr6odvc-hld6KolUI2J-SnvvLbVEWuvuncjT6Ef8g7wbTGM_ZIxY2R9T3FIMp9aoqSBPbMZp73Ikyvy5PBzgDAeTOTqFUVpxWWNp5pF8RnFLSLpbfus4_Wm_MUNmapnnaV5JPqaRSy6PRXiZG5Q_D-bANWqdVtR6G1SS77nOo9l1A'); background-size: cover; background-position: center;">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="bg-background-light dark:bg-background-dark/50 py-24 px-4 md:px-20" id="servicos">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="flex flex-col gap-4 mb-16 text-center md:text-left">
+                    <h2 class="text-primary dark:text-blue-400 font-bold tracking-widest uppercase text-sm">O Que
+                        Fazemos</h2>
+                    <h3 class="text-3xl md:text-5xl font-black text-[#101318] dark:text-white">Soluções sob medida para
+                        sua empresa</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div
+                        class="group bg-white dark:bg-background-dark p-8 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-forest-green transition-all shadow-sm hover:shadow-xl">
+                        <div
+                            class="w-14 h-14 bg-forest-green/10 text-forest-green rounded-lg flex items-center justify-center mb-6 group-hover:bg-forest-green group-hover:text-white transition-all">
+                            <span class="material-symbols-outlined text-3xl">language</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4">Websites Customizados</h4>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                            Páginas institucionais, e-commerces e landing pages de alta conversão focadas em resultados.
+                        </p>
+                        <ul class="flex flex-col gap-3 text-sm font-medium text-gray-500 dark:text-gray-400">
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-forest-green text-sm">check_circle</span>
+                                Design Responsivo</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-forest-green text-sm">check_circle</span> SEO
+                                Otimizado</li>
+                        </ul>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="group bg-white dark:bg-background-dark p-8 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-primary transition-all shadow-sm hover:shadow-xl">
+                        <div
+                            class="w-14 h-14 bg-primary/10 text-primary rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-all">
+                            <span class="material-symbols-outlined text-3xl">settings_suggest</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4">Sistemas de Gestão</h4>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                            ERPs, CRMs e ferramentas internas personalizadas para automatizar e escalar sua gestão.
+                        </p>
+                        <ul class="flex flex-col gap-3 text-sm font-medium text-gray-500 dark:text-gray-400">
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Dashboard
+                                Inteligente</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-primary text-sm">check_circle</span> Segurança
+                                de Dados</li>
+                        </ul>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="group bg-white dark:bg-background-dark p-8 rounded-xl border border-gray-100 dark:border-gray-800 hover:border-bright-yellow transition-all shadow-sm hover:shadow-xl">
+                        <div
+                            class="w-14 h-14 bg-bright-yellow/20 text-orange-600 rounded-lg flex items-center justify-center mb-6 group-hover:bg-bright-yellow group-hover:text-primary transition-all">
+                            <span class="material-symbols-outlined text-3xl">lightbulb</span>
+                        </div>
+                        <h4 class="text-xl font-bold mb-4">Consultoria Digital</h4>
+                        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-6">
+                            Estratégia tecnológica e otimização de UX/UI para transformar a experiência do seu produto.
+                        </p>
+                        <ul class="flex flex-col gap-3 text-sm font-medium text-gray-500 dark:text-gray-400">
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-orange-500 text-sm">check_circle</span>
+                                Auditoria de UX</li>
+                            <li class="flex items-center gap-2"><span
+                                    class="material-symbols-outlined text-orange-500 text-sm">check_circle</span>
+                                Planejamento Ágil</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Us Section -->
+        <section class="py-24 px-4 md:px-20 bg-primary text-white" id="sobre">
+            <div class="max-w-[1280px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div class="order-2 md:order-1">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white/10 p-6 rounded-xl text-center">
+                            <div class="text-4xl font-black text-bright-yellow mb-2">150+</div>
+                            <div class="text-sm uppercase tracking-widest font-bold">Projetos Entregues</div>
+                        </div>
+                        <div class="bg-white/10 p-6 rounded-xl text-center">
+                            <div class="text-4xl font-black text-bright-yellow mb-2">10+</div>
+                            <div class="text-sm uppercase tracking-widest font-bold">Anos de Experiência</div>
+                        </div>
+                        <div class="bg-white/10 p-6 rounded-xl text-center">
+                            <div class="text-4xl font-black text-bright-yellow mb-2">98%</div>
+                            <div class="text-sm uppercase tracking-widest font-bold">Satisfação</div>
+                        </div>
+                        <div class="bg-white/10 p-6 rounded-xl text-center">
+                            <div class="text-4xl font-black text-bright-yellow mb-2">24/7</div>
+                            <div class="text-sm uppercase tracking-widest font-bold">Suporte Ativo</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 flex flex-col gap-6">
+                    <h2 class="text-bright-yellow font-bold uppercase tracking-widest text-sm">Sobre Nós</h2>
+                    <h3 class="text-4xl md:text-5xl font-black leading-tight">Compromisso com a excelência técnica</h3>
+                    <p class="text-blue-100 text-lg leading-relaxed">
+                        A DSA Digital nasceu com o propósito de aproximar grandes ideias da tecnologia de ponta. Somos
+                        uma equipe apaixonada por código, design e, acima de tudo, resultados reais para nossos
+                        parceiros.
+                    </p>
+                    <p class="text-blue-100/80">
+                        Não entregamos apenas software; construímos os alicerces digitais que sustentam o crescimento de
+                        empresas inovadoras no Brasil e no mundo.
+                    </p>
+                    <!-- <a class="text-bright-yellow font-bold flex items-center gap-2 hover:underline" href="#">
+                        Conheça nossa cultura <span class="material-symbols-outlined">arrow_forward</span>
+                    </a> -->
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Section -->
+        <section class="py-24 px-4 md:px-20 bg-white dark:bg-background-dark" id="portfolio">
+            <div class="max-w-[1280px] mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-primary dark:text-blue-400 font-bold tracking-widest uppercase text-sm mb-4">
+                        Portfólio</h2>
+                    <h3 class="text-3xl md:text-5xl font-black text-[#101318] dark:text-white">Projetos que inspiram
+                        confiança</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="group relative overflow-hidden rounded-xl aspect-[4/3] bg-gray-200">
+                        <img alt="Dashboard Financeiro"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Modern financial dashboard interface with charts and graphs"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwh4jGJV2-5f1Cikm9Fp1iCmkwbYwykEKd0dAGEZBK6253Bgxysm2sz44trCQbdDWpuXj34zN56n6xiLtWzTg7y6APOzyIqJbTZVTLEc1uFNdOl8MZ5ysF9bKTvOA8ZZxnRAudjrM9AFJjVUlcmcWzSWBtPAKEjaXuap5CN4v9qVO1EyS-T81wvwfVW92vgmjFQ5u0mWWbvGbjEnUOcdtROppFgn046NN9eH6X9-QMwyXHK4Vzkxoec3sAcAHIwOS-h8cVtJJlnoA" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
+                            <span class="text-bright-yellow font-bold text-xs uppercase mb-2">Sistemas ERP</span>
+                            <h4 class="text-xl font-bold">Fintech Solutions</h4>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-xl aspect-[4/3] bg-gray-200">
+                        <img alt="Website Corporativo"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Team collaborating in a modern office space"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCvwYugryBJAjZWSmVJhRWCLRnXGJuXjVjCTNQFPmbICnrsZPI19bbAvey1M41QahFp1sH5juF04PihkttpvcgGSnXam8bqxpBOgAqzj8w2269FNtFl3XwsA9t5m1vs0qnPVA2vxaYkOTLXfSTuhVqyrLd5jBTzrR6Yoml_sD0yxlOmaJ9eP_O77t8MdrZJdZhxvaZTnZlefyuyWMw56LsGZtab5ydI8crhxzjLO_5et4Con2J-WfuszjrWZYnWPaC0CI81uMJUw9I" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-forest-green/90 via-forest-green/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
+                            <span class="text-bright-yellow font-bold text-xs uppercase mb-2">Web Design</span>
+                            <h4 class="text-xl font-bold">Inova Corp Landing</h4>
+                        </div>
+                    </div>
+                    <div class="group relative overflow-hidden rounded-xl aspect-[4/3] bg-gray-200">
+                        <img alt="E-commerce Platform"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                            data-alt="Modern e-commerce store layout on a screen"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIDoDqqgz3il0URrgtyYxF-CXfR9eWypkRnyHgtjKO3S5Ya_c_kZTN3jT9R_jIPGyqxsm-ordlKvhhWM8t48ItqAxAhdZyEoeKbc_JfKUZke1p5nx4mU6vnOuYlrMz-trUslLApNv8dyfZosgnBThLGTJGGYQxC5m8hl_KAN3mIfLUWWaGdDzoIvogYox3a5djnU-h1qhJv4osveEHyYI04eW7bJHJLPuGPo9dFJTNBSDyhIbCiZKka_Iy0cu2cX3dMUEhXL_4BOg" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-blue-600/90 via-blue-600/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex flex-col justify-end p-8 text-white">
+                            <span class="text-bright-yellow font-bold text-xs uppercase mb-2">E-commerce</span>
+                            <h4 class="text-xl font-bold">Vogue Store Online</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="py-24 px-4 md:px-20 bg-background-light dark:bg-background-dark/50" id="contato">
+            <div
+                class="max-w-[1000px] mx-auto bg-white dark:bg-background-dark rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                <div class="md:w-1/3 bg-primary p-10 text-white flex flex-col justify-between">
+                    <div>
+                        <h3 class="text-3xl font-black mb-6">Vamos conversar?</h3>
+                        <p class="text-blue-100/80 mb-8">Traga seu projeto e descubra como a tecnologia certa pode mudar
+                            seu jogo.</p>
+                        <div class="flex flex-col gap-6">
+                            <div class="flex items-center gap-4">
+                                <span class="material-symbols-outlined text-bright-yellow">mail</span>
+                                <div>
+                                    <div class="text-xs text-blue-200 uppercase font-bold">Email</div>
+                                    <div class="font-medium">contato@dsadigital.com</div>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <span class="material-symbols-outlined text-bright-yellow">call</span>
+                                <div>
+                                    <div class="text-xs text-blue-200 uppercase font-bold">Telefone</div>
+                                    <div class="font-medium">+55 (11) 99999-8888</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 mt-12">
+                        <div
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 cursor-pointer transition-colors">
+                            <span class="material-symbols-outlined text-sm">share</span>
+                        </div>
+                        <div
+                            class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 cursor-pointer transition-colors">
+                            <span class="material-symbols-outlined text-sm">public</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-2/3 p-10 md:p-14">
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="flex flex-col gap-2">
+                            <label class="text-sm font-bold text-gray-700 dark:text-gray-300">Nome Completo</label>
+                            <input
+                                class="w-full bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                                placeholder="Seu nome" type="text" />
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <label class="text-sm font-bold text-gray-700 dark:text-gray-300">E-mail Corporativo</label>
+                            <input
+                                class="w-full bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                                placeholder="seu@email.com" type="email" />
+                        </div>
+                        <div class="flex flex-col gap-2 md:col-span-2">
+                            <label class="text-sm font-bold text-gray-700 dark:text-gray-300">Tipo de Projeto</label>
+                            <select
+                                class="w-full bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none">
+                                <option>Website Institucional</option>
+                                <option>Sistema de Gestão (ERP/CRM)</option>
+                                <option>Consultoria UX/UI</option>
+                                <option>Outro</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col gap-2 md:col-span-2">
+                            <label class="text-sm font-bold text-gray-700 dark:text-gray-300">Mensagem</label>
+                            <textarea
+                                class="w-full bg-gray-50 dark:bg-gray-800 border-gray-200 dark:border-gray-700 rounded-lg p-3 focus:ring-2 focus:ring-primary focus:border-transparent outline-none"
+                                placeholder="Conte-nos brevemente sobre sua visão..." rows="4"></textarea>
+                        </div>
+                        <button
+                            class="md:col-span-2 bg-forest-green text-white py-4 rounded-lg font-bold text-lg hover:brightness-110 shadow-lg shadow-forest-green/20 transition-all">
+                            Enviar Proposta
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16 px-4 md:px-20">
+        <div
+            class="max-w-[1280px] mx-auto flex flex-col md:flex-row justify-between gap-12 border-b border-white/10 pb-12">
+            <div class="flex flex-col gap-6 max-w-[300px]">
+                <div class="flex items-center gap-3">
+                    <span class="material-symbols-outlined text-bright-yellow text-3xl">shield_with_heart</span>
+                    <h2 class="text-xl font-extrabold tracking-tight">DSA <span
+                            class="text-bright-yellow">Digital</span></h2>
+                </div>
+                <p class="text-blue-100/60 text-sm leading-relaxed">
+                    Elevando o padrão de desenvolvimento digital com soluções inovadoras e design centrado no usuário.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+                <div class="flex flex-col gap-4">
+                    <h5 class="font-bold text-white">Empresa</h5>
+                    <a class="text-sm text-blue-100/60 hover:text-bright-yellow" href="#">Sobre Nós</a>
+                    <a class="text-sm text-blue-100/60 hover:text-bright-yellow" href="#">Carreiras</a>
+                    <a class="text-sm text-blue-100/60 hover:text-bright-yellow" href="#">Blog</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h5 class="font-bold text-white">Serviços</h5>
+                    <a class="text-sm text-blue-100/60 hover:text-bright-yellow" href="#">Websites</a>
+                    <a class="text-sm text-blue-100/60 hover:text-bright-yellow" href="#">Sistemas</a>
+                    <a class="text-sm text-blue-100/60 hover:text-bright-yellow" href="#">Consultoria</a>
+                </div>
+                <div class="flex flex-col gap-4">
+                    <h5 class="font-bold text-white">Suporte</h5>
+                    <a class="text-sm text-blue-100/60 hover:text-bright-yellow" href="#">Contato</a>
+                    <a class="text-sm text-blue-100/60 hover:text-bright-yellow" href="#">Privacidade</a>
+                    <a class="text-sm text-blue-100/60 hover:text-bright-yellow" href="#">Termos</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-[1280px] mx-auto pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-blue-100/40 font-medium">
+            <p>© 2024 DSA Digital. Todos os direitos reservados.</p>
+            <div class="flex gap-8">
+                <span>Feito com <span class="text-bright-yellow">♥</span> em São Paulo</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
