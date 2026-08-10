@@ -1,0 +1,20 @@
+{
+    "name": "DSA Digital",
+    "short_name": "DSA Digital",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#101823",
+    "description": "Conjunto de ferramentas para seu negócio.",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ],
+    "related_applications": [
+        {
+            "platform": "web"
+        }
+    ]
+}
