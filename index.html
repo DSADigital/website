@@ -1,7 +1,20 @@
 <!doctype html>
-<html lang="pt-br" class="light">
+<html lang="pt-br">
 
 <head>
+  <script>
+    (function () {
+      try {
+        const saved = localStorage.getItem("theme");
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = saved === "dark" || saved === "light" ? saved : (prefersDark ? "dark" : "light");
+        document.documentElement.classList.remove("light", "dark");
+        document.documentElement.classList.add(theme);
+      } catch (e) {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -23,8 +36,8 @@
       window.history.replaceState(null, "", redirect);
     }
   </script>
-  <script type="module" crossorigin src="/assets/index-DGKSfpXU.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-CpCSiBo0.css">
+  <script type="module" crossorigin src="/assets/index-Bsby8P90.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CfG2N0ds.css">
 </head>
 
 <body>
